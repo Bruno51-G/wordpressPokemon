@@ -24,8 +24,8 @@ services:
     environment:
       - WORDPRESS_DB_HOST=wordpress_db
       - WORDPRESS_DB_NAME=db_wordpress
-      - WORDPRESS_DB_USER=username
-      - WORDPRESS_DB_PASSWORD=azerty
+      - WORDPRESS_DB_USER=pokename
+      - WORDPRESS_DB_PASSWORD=qwerty
     working_dir: /var/www/html
     volumes:
       - ./wp_app:/var/www/html
