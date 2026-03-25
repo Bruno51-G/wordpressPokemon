@@ -13,6 +13,7 @@
 
 <header class="site-header">
     <p class="logoTitre"><?php bloginfo('name'); ?></p>
+    <img class="logo" src="<?= get_stylesheet_directory_uri() ?>/img/pikachu.png" alt="La mascotte de pokemon">
 </header>
 
 <nav>
