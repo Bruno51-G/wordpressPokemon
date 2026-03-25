@@ -11,7 +11,13 @@ get_header();
     ?>
         <article class="theme-article">
             <header>
-                    <?php the_post_thumbnail('thumbnail'); ?>
+                    <?php
+                        if(has_post_thumbnail()){
+                            the_post_thumbnail('thumbnail');
+                        } else {
+                            echo '<img src="'.get_template_directory_uri(). '/img/noPhoto.png" alt="">';
+                        }
+                     ?>
                 <h1>
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>

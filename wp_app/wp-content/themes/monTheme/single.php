@@ -20,7 +20,7 @@ get_header();
                 </aside>
             </header>
 
-            <?php the_post_thumbnail('thumbnail'); ?>
+            <!-- <?php the_post_thumbnail('thumbnail'); ?> -->
             <div>
                 <?php the_content(); ?>
             </div>

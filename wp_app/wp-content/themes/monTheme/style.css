@@ -67,9 +67,13 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    margin: 0rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.home .montheme-articles {
+    width: 95%;
 }
 
 .theme-article{
@@ -92,4 +96,10 @@ body{
     top: 1rem;
     left: 1rem;
 }
+
+.attachment-thumbnail{
+    width: 36rem;
+    height: auto;
+}
+
 
