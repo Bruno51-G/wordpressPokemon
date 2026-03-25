@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<h1>FRONT-PAGE.PHP</h1>
+<h1>HOME.PHP</h1>
 <div class="montheme-articles">
     <?php
         if(have_posts()):
@@ -10,10 +10,10 @@ get_header();
                 the_post();
     ?>
         <article class="theme-article">
-            <h1><?php the_title(); ?></h1>
+            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             <?php the_post_thumbnail('thumbnail'); ?>
             <div>
-                <?php the_content(); ?>
+                <?php the_excerpt(); ?>
             </div>
         </article>
 
@@ -24,12 +24,6 @@ get_header();
     endif;
     ?>
 </div>
-
-<aside>
-    <?php 
-        dynamic_sidebar('main-sidebar');
-    ?>
-</aside>
 
 <?php
 get_footer();
